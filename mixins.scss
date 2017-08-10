@@ -1,0 +1,7 @@
+@mixin include-off-canvas-absolute-style($settings: ()) {
+    $settings: map-merge((z-index: $gridi-components-off-canvas-absolute-z-index), $settings);
+    position: absolute;
+    @if map-has-key($settings, z-index) {
+        z-index: map-get($settings, z-index);
+    }
+}

@@ -1,0 +1,5 @@
+@if $gridi-components-off-canvas-absolute-generate-classes {
+    .off-canvas.off-canvas-absolute {
+        @include include-off-canvas-absolute-style();
+    }
+}
